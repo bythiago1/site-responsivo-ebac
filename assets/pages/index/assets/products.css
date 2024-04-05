@@ -1,0 +1,102 @@
+.products .container {
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+.products > h1 {
+    margin: 48px auto 16px auto;
+    max-width: 1280px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid var(--primary-yellow);
+    font-style: italic;
+}
+
+.products .container img {
+    max-height: 300px;
+    margin-right: 5px;
+}
+
+.products .container .card {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.products .container .card h1,
+p {
+    margin-bottom: 8px;
+}
+
+.products .container .card button {
+    margin-top: 5px;
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    width: 270px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .products .container {
+        display: block;
+        max-width: 640px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 48px;
+    }
+    .products .container .card {
+        max-width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .products > h1 {
+        max-width: 520px;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        border-bottom: 3px solid var(--primary-yellow);
+        font-style: italic;
+    }
+
+    .products .container img {
+        max-height: 80vw;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .products .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 48px;
+    }
+
+    .products .container .card {
+        max-width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    
+    .products > h1 {
+        max-width: 940px;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        border-bottom: 3px solid var(--primary-yellow);
+        font-style: italic;
+    }
+
+    .products .container img {
+        max-height: 25vw;
+    }
+}
